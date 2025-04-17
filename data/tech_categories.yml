@@ -1,0 +1,27 @@
+# Technology to category mapping
+categories:
+  - name: "Cloud"
+    emoji: "☁️"
+    technologies:
+      - "Azure"
+      - "AWS"
+      - "GCP"
+
+  - name: "Data & Analytics"
+    emoji: "📊"
+    technologies:
+      - "dbt"
+      - "Databricks"
+      - "Athena"
+      - "Snowflake"
+      - "Airflow"
+      - "Dagster"
+      - "Power BI"
+      - "Azure Data Factory"
+
+  - name: "Programming & Development"
+    emoji: "💻"
+    technologies:
+      - "Python"
+      - "Terraform"
+      - "Kubernetes"

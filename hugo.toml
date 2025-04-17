@@ -1,9 +1,9 @@
-baseURL = 'https://weeks.ginatrapani.org/'
+baseURL = 'https://xebia.lasse.be/'
 languageCode = 'en-us'
-title = 'My Life in Weeks'
+title = 'My Xebia Career in Weeks'
 disableKinds = ["taxonomy", "taxonomy"]
 enableEmoji = true
 
 
 [params]
-author = "Gina Trapani"
+author = "Lasse Benninga"

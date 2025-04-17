@@ -6,39 +6,64 @@
 # Convert based and doing class_name's to lower case and replace spaces with dashes
 # i.e., New York City becomes new-york-city
 #
-- class_name: "brooklyn"
+
+# Location-based border colors (Dutch-inspired palette)
+- class_name: "amsterdam"
   element: "border"
-  color_name: "#8eb2d6"
+  color_name: "#FF9B54" # Warm orange (Amsterdam's color)
+- class_name: "eindhoven"
+  element: "border"
+  color_name: "#4D9DE0" # Blue
+- class_name: "remote"
+  element: "border"
+  color_name: "#7768AE" # Purple
+- class_name: "home"
+  element: "border"
+  color_name: "#3BB273" # Green
+- class_name: "utrecht"
+  element: "border"
+  color_name: "#E15554" # Red
+- class_name: "amersfoort"
+  element: "border"
+  color_name: "#3BB273" # Green
+- class_name: "zeist"
+  element: "border"
+  color_name: "#7AC74F" # Light green
+- class_name: "den-haag"
+  element: "border"
+  color_name: "#FFC857" # Yellow
+- class_name: "new-orleans"
+  element: "border"
+  color_name: "#007bff" # Blue
 - class_name: "san-diego"
   element: "border"
-  color_name: "#FCC737"
-- class_name: "north-carolina"
+  color_name: "#007bff" # Blue
+- class_name: "las-vegas"
   element: "border"
-  color_name: "#118B50"
-- class_name: "poughkeepsie"
+  color_name: "#007bff" # Blue
+
+# Activity-based background colors (Xebia-inspired)
+- class_name: "analytics-&-data-engineer"
+  element: "background-color"
+  color_name: "#E8F4F8" # Very light blue
+- class_name: "data-engineer-(xebia-data)"
+  element: "background-color"
+  color_name: "#D4E6F1" # Light blue
+- class_name: "analytics-engineer-(xebia-data)"
+  element: "background-color"
+  color_name: "#D5F5E3" # Light green
+- class_name: "senior-data-engineer-(xebia-data)"
+  element: "background-color"
+  color_name: "#FADBD8" # Light red/pink
+- class_name: "author"
+  element: "background-color"
+  color_name: "#F5EEF8" # Light purple
+- class_name: "sabbatical"
+  element: "background-color"
+  color_name: "#FF9B54" # Light orange
+- class_name: "transition"
   element: "border"
-  color_name: "#469046"
-- class_name: "i-was-tiny"
+  color_name: "#3BB273" # Green (Same as Home/Sabbatical)
+- class_name: "transition"
   element: "background-color"
-  color_name: "white"
-- class_name: "kindergartner"
-  element: "background-color"
-  color_name: "#FFF6DA"
-- class_name: "student"
-  element: "background-color"
-  color_name: "#E8F9FF"
-- class_name: "high-school-student"
-  element: "background-color"
-  color_name: "#C9E9D2"
-- class_name: "college-student"
-  element: "background-color"
-  color_name: "#FFE3E3"
-- class_name: "working"
-  element: "background-color"
-  color_name: "#F8E7F6"
-- class_name: "freelancing"
-  element: "background-color"
-  color_name: "#d6d6f0"
-- class_name: "funemployed"
-  element: "background-color"
-  color_name: "white"
+  color_name: "#FF9B54" # Light orange (Same as Sabbatical)

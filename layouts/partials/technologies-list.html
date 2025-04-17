@@ -1,0 +1,122 @@
+{{- /* Extract and display all unique technologies from events with counts */ -}}
+{{ $data := .Site.Data.events }}
+{{ $techCategories := .Site.Data.tech_categories }}
+{{ $allTechnologies := slice }}
+{{ $techCounts := dict }}
+
+{{- /* Load technology icons */ -}}
+{{ $techIcons := .Site.Data.tech_icons }}
+
+{{- /* Process all events to extract unique technologies and count occurrences */ -}}
+{{ $technologies := slice }}
+{{ $techCounts := dict }}
+
+{{ range $date, $events := .Site.Data.events }}
+    {{ range $events }}
+        {{ if .technologies }}
+            {{ $techList := split .technologies ", " }}
+            {{ range $techList }}
+                {{ $tech := trim . " " }}
+                {{ $technologies = $technologies | append $tech }}
+                
+                {{ $currentCount := index $techCounts $tech | default 0 }}
+                {{ $techCounts = merge $techCounts (dict $tech (add $currentCount 1)) }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{- /* Get unique technologies */ -}}
+{{ $uniqueTechnologies := slice }}
+{{ range $tech := $technologies | uniq | sort }}
+    {{ $uniqueTechnologies = $uniqueTechnologies | append $tech }}
+{{ end }}
+
+{{- /* Create category maps from YAML file */ -}}
+{{ $categorizedTech := dict }}
+{{ $uncategorizedTech := slice }}
+
+{{- /* Initialize category maps */ -}}
+{{ range $category := $techCategories.categories }}
+    {{ $categorizedTech = merge $categorizedTech (dict $category.name slice) }}
+{{ end }}
+
+{{- /* Categorize technologies based on the YAML file */ -}}
+{{ range $tech := $uniqueTechnologies }}
+    {{ $categorized := false }}
+    {{ range $category := $techCategories.categories }}
+        {{ range $categoryTech := $category.technologies }}
+            {{ if eq $tech $categoryTech }}
+                {{ $techList := index $categorizedTech $category.name }}
+                {{ $techList = $techList | append $tech }}
+                {{ $categorizedTech = merge $categorizedTech (dict $category.name $techList) }}
+                {{ $categorized = true }}
+                {{ break }}
+            {{ end }}
+        {{ end }}
+        {{ if $categorized }}
+            {{ break }}
+        {{ end }}
+    {{ end }}
+    {{ if not $categorized }}
+        {{ $uncategorizedTech = $uncategorizedTech | append $tech }}
+    {{ end }}
+{{ end }}
+
+<div class="container mt-5 mb-5">
+    <h2 class="mb-4" style="color: var(--text-color); border-bottom: 2px solid var(--highlight-color); padding-bottom: 10px;">Technologies</h2>
+    <p class="mb-4" style="color: var(--text-color);"><small><i>Numbers indicate the count of clients/projects where each technology was used</i></small></p>
+    
+    {{- /* Display technologies by category */ -}}
+    {{ range $category := $techCategories.categories }}
+        {{ $techList := index $categorizedTech $category.name }}
+        {{ if gt (len $techList) 0 }}
+        <div class="mb-4">
+            <h4 style="color: var(--text-color);">{{ $category.emoji }} {{ $category.name }}</h4>
+                <div class="row">
+                    <div class="col-12">
+                        <div style="border: 2px solid rgba(0, 0, 0, 0.1); border-radius: 15px; padding: 20px;">
+                            {{ $sortedTechList := slice }}
+                            {{ range $tech := $techList }}
+                                {{ $count := index $techCounts $tech }}
+                                {{ $sortedTechList = $sortedTechList | append (dict "name" $tech "count" $count) }}
+                            {{ end }}
+                            
+                            {{ range $tech := sort $sortedTechList "count" "desc" }}
+                                <div style="font-size: 1.2em; font-family: 'Courier New', monospace; font-style: italic; margin-bottom: 8px;">
+                                    {{ $icon := index $techIcons.icons $tech.name | default $techIcons.icons.default }}
+                                    {{ $icon | safeHTML }} {{ $tech.name }} ({{ $tech.count }})
+                                </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+        </div>
+        {{ end }}
+    {{ end }}
+    
+    {{- /* Display uncategorized technologies if any */ -}}
+    {{ if gt (len $uncategorizedTech) 0 }}
+    <div class="mb-4">
+        <h4 style="color: var(--text-color);">🔍 Other</h4>
+            <div class="row">
+                <div class="col-12">
+                    <div style="border: 2px solid rgba(0, 0, 0, 0.1); border-radius: 15px; padding: 20px;">
+                        {{ $sortedUncategorizedTech := slice }}
+                        {{ range $tech := $uncategorizedTech }}
+                            {{ $count := index $techCounts $tech }}
+                            {{ $sortedUncategorizedTech = $sortedUncategorizedTech | append (dict "name" $tech "count" $count) }}
+                        {{ end }}
+                        
+                        {{ range $tech := sort $sortedUncategorizedTech "count" "desc" }}
+                            <div style="font-size: 1.2em; font-family: 'Courier New', monospace; font-style: italic; margin-bottom: 8px;">
+                                {{ $icon := index $techIcons.icons $tech.name | default $techIcons.icons.default }}
+                                {{ $icon | safeHTML }} {{ $tech.name }} ({{ $tech.count }})
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+    </div>
+    {{ end }}
+</div>

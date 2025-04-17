@@ -1,14 +1,16 @@
 ---
-title       : My Life in Weeks
-description : This is a map of my life, where each week I’ve been alive is a little box.
-start_date  : 1975-09-19
-end_year    : 2075
+title       : My Xebia Data Career in Weeks
+description : This is a map of my Xebia consulting career, where each week I’ve consulted is a little box.
+start_date  : 2021-10-01
+end_year    : 2025
 ---
 
-👋 Hi, I'm [Gina](https://ginatrapani.org). This is a map of my life, where each week I've been alive is a little box. Tap a box to see what I was doing where that week.
+👋 Hi, I'm [Lasse](https://github.com/lassebenni/). This was my journey as a consultant at Xebia Data visualized in weeks since my start in October of 2021 up to today (17-04-2025). The repository code is [available here](https://github.com/lassebenni/xebia-weeks/).
 
-📍 Read more about [Life in Weeks at Wait But Why](https://waitbutwhy.com/2014/05/life-weeks.html). I adapted [the code that generated this page](https://github.com/ginatrapani/life-in-weeks) from [Buster Benson](https://busterbenson.com/life-in-weeks).
+[My Linkedin](https://www.linkedin.com/in/lasse-benninga-a462b194/)
 
-🌱 This life and this map are a work in progress. I'll update it as I go.
+[📖 Order our book: The Fundamentals of Analytics Engineering](https://www.amazon.com/Fundamentals-Analytics-Engineering-end-end/dp/1837636451)
 
-🍯 "I always get to where I am going by walking away from where I have been." – Winnie the Pooh
+-------------
+
+This project was inspired by [Gina Trapani](https://ginatrapani.org/)'s implementation of [Wait But Why's "Your Life in Weeks](https://waitbutwhy.com/2014/05/life-weeks.html). Her code can be found in the [life-in-weeks github repository](https://github.com/ginatrapani/life-in-weeks) which is hosted on [weeks.ginatrapani.org](https://weeks.ginatrapani.org).

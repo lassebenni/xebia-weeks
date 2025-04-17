@@ -14,13 +14,19 @@
 
 @font-face {
     font-family: redhatdisplay-medium;
-    src: url(/fonts/RedHatDisplay-Medium.ttf);
+    src: url('../fonts/RedHatDisplay-Medium.ttf');
 }
 
 @font-face {
     font-family: redhatdisplay-xtrabold;
-    src: url(/fonts/RedHatDisplay-ExtraBold.ttf);
+    src: url('../fonts/RedHatDisplay-ExtraBold.ttf');
 }
+
+// Import tooltip links styling
+@import "tooltip-links";
+
+// Import custom tooltip styling for better readability
+@import "custom-tooltips";
 
 *,
 :after,

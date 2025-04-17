@@ -27,3 +27,6 @@ themes/**/.cache/
 # Go Modules (if using Hugo Modules)
 go.sum
 go.mod
+
+# Local Netlify folder
+.netlify
