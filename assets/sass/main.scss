@@ -56,6 +56,10 @@ body {
     line-height: 1.5;
     color: var(--text-color);
     background-color: inherit;
+    padding-top: 100px;
+    @media only screen and (max-width: 768px) {
+        padding-top: 60px;
+    }
 }
 
 h1 {
@@ -64,16 +68,46 @@ h1 {
     font-size: var(--header-font-size-desktop);
     margin: 0;
     color: var(--header-text-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    z-index: 1000;
+    padding: 10px 0;
+    height: calc(var(--header-font-size-desktop) * 1.5 + 20px); // line-height + padding
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: none !important;
+    will-change: unset;
+    /* Remove/override all scroll-based or animated changes */
     @media only screen and (max-width: 768px) {
         font-size: var(--header-font-size-mobile);
+        height: calc(var(--header-font-size-mobile) * 1.5 + 20px);
+        padding: 10px 0;
     }
-    transition: all 0.25s;
+    @-moz-document url-prefix() {
+        box-shadow: 0 0 0 1px var(--main-bg-color); // Firefox-specific fix
+    }
 }
 
-h1.tiny {
-    font-size: var(--header-font-size-mobile);
-    transition: all 0.25s;
+/* Prevent any scroll-based shrinking or animation */
+body.scrolled h1,
+.scrolled h1 {
+    font-size: var(--header-font-size-desktop) !important;
+    height: calc(var(--header-font-size-desktop) * 1.5 + 20px) !important;
+    padding: 10px 0 !important;
+    transition: none !important;
 }
+@media only screen and (max-width: 768px) {
+    body.scrolled h1,
+    .scrolled h1 {
+        font-size: var(--header-font-size-mobile) !important;
+        height: calc(var(--header-font-size-mobile) * 1.5 + 20px) !important;
+        padding: 10px 0 !important;
+        transition: none !important;
+    }
+}
+
+
 
 h1 a,
 h1 a:hover {
