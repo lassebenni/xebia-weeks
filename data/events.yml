@@ -57,6 +57,13 @@
       doing: "Conference"
       association: "dbt Labs"
 
+"2022-10-25":
+    - headline: ""
+      based: "Amsterdam"
+      doing: "Analytics Engineer (Xebia Data)"
+      association: "Vattenfall"
+      description: "Worked in a domain team for Customer Insights, analyzing and creating dashboards on customer data, specifically renewable energies. [Vattenfall](https://www.vattenfall.nl/)"
+
 "2022-11-01":
     - headline: "🧀 Project @ Interfood"
       based: "Eindhoven"
@@ -83,9 +90,18 @@
       doing: "Conference"
       association: "dbt Labs"
 
+"2023-10-21":
+    - headline: ""
+      based: "Amsterdam"
+      doing: "Data Engineer (Xebia Data)"
+      association: "Fetim Group"
+      description: "Deployed a Xebia Base Azure data platform (Databricks, dbt, Power BI). Coached users and worked on analytical use cases like warehouse insights. [Fetim Group](https://www.fetimgroup.com/)"
+      technologies: "Databricks, dbt, Power BI, Azure, Python"
+
 "2024-01-01":
     - headline: "🏝️ Sabbatical Leave"
       based: "Home"
+      association: "Sabbatical"
       doing: "Sabbatical"
       description: "Taking a sabbatical leave for 3 months to focus on personal projects."
     - headline: "🎉 2024"
@@ -98,8 +114,9 @@
       description: "Co-authored book 'Fundamentals of Analytics Engineering' published. [Buy the book](https://www.amazon.com/Fundamentals-Analytics-Engineering-end-end/dp/1837636451)"
       technologies: "Writing"
 
-    - headline: "Sabbatical"
+    - headline: ""
       based: "Home"
+      association: "Sabbatical"
       doing: "Sabbatical"
       description: "Taking a sabbatical leave for 3 months to focus on personal projects."
 
@@ -126,6 +143,13 @@
       doing: "Conference"
       association: "dbt Labs"
 
+"2024-10-14":
+    - headline: ""
+      based: "Zeist"
+      doing: "Senior Analytics Engineer (Xebia Data)"
+      association: "KNVB"
+      description: "Migrated 30+ SAS Viya workflows to Snowflake +dbt. [KNVB](https://www.knvb.nl/)"
+
 "2025-01-01":
     - headline: "🎉 2025"
 
@@ -143,8 +167,9 @@
       doing: "Transition"
       description: "After 3,5 years, I'm leaving Xebia Data."
 
-"2025-05-01":
+"2025-04-29":
     - headline: "💼 Freelancing"
       based: "Transition"
       doing: "Transition"
       description: "Starting to freelance"
+      association: "Freelance"
