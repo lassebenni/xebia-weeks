@@ -152,7 +152,7 @@ There are three main loops in this page, each nested inside the other: Years, We
                             {{ if ne .description nil }}
                                 {{ $formattedDate := dateFormat "Jan 2, 2006" $specDate }}
                                 {{ $markdownDesc := .description | markdownify }}
-                                {{ $tooltipContent := $markdownDesc }}
+                                {{ $tooltipContent := printf "<strong>%s</strong><br><br>%s" .headline $markdownDesc }}
                                 
                                 {{ if ne .technologies nil }}
                                     {{ $tooltipContent = printf "%s<div style=\"margin-top: 10px; padding-top: 10px; border-top: 1px solid #ccc;\"><strong>Technologies:</strong> %s</div>" $tooltipContent .technologies }}
