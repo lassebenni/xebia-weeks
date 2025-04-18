@@ -117,7 +117,7 @@
       doing: "Senior Analytics Engineer (Xebia Data)"
       association: "KNVB"
       description: "Migrated 30+ SAS Viya workflows to Snowflake +dbt"
-      technologies: "SAS, dbt, Azure, Dagster"
+      technologies: "SAS, Snowflake, dbt, Azure, Dagster"
 
 "2024-10-07":
     - headline: 'dbt Coalesce 2024'
