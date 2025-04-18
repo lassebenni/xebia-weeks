@@ -1,7 +1,7 @@
 #
-# The first event should be birth.
-# The date should match start_date in content/index.md.
+# The first event date should match start_date in content/index.md.
 #
+
 "2021-10-01":
     - headline: "🚀 Started at Xebia Data"
       based: "Amsterdam"
@@ -21,7 +21,7 @@
       based: "Amsterdam"
       doing: "Data Engineer (Xebia Data)"
       association: "Felyx"
-      description: "Implemented a Google Cloud Data Platform using Infrastructure-as-Code, and migrated from their existing GCP environment."
+      description: "Implemented a Google Cloud Data Platform using Infrastructure-as-Code, and migrated from their existing GCP environment. [Felyx](https://felyx.com/)"
       technologies: "Python, GCP, Airflow, Terraform, Kubernetes"
 
 "2022-01-01":
@@ -32,14 +32,14 @@
       based: "Eindhoven"
       doing: "Data Engineer (Xebia Data)"
       association: "Renewi"
-      description: "Supported and coached a team of data analysts and data engineers in running an Azure Cloud Data Platform."
+      description: "Supported and coached a team of data analysts and data engineers in running an Azure Cloud Data Platform. [Renewi](https://www.renewi.com/)"
       technologies: "Azure, dbt, Databricks, Azure Data Factory, Terraform"
 
     - headline: "🏭 Project @ VCKG"
       based: "Amsterdam"
       doing: "Analytics Engineer (Xebia Data)"
       association: "Van Caem Klerks Group"
-      description: "Implemented an Azure Cloud Data Platform, worked on a data product for order insights, hired and coached junior analysts."
+      description: "Implemented an Azure Cloud Data Platform, worked on a data product for order insights, hired and coached junior analysts. [Van Caem Klerks Group](https://www.vckg.nl/)"
       technologies: "Azure, dbt, Databricks, Azure Data Factory, Terraform, Python"
 
 "2022-09-01":
@@ -47,7 +47,7 @@
       based: "Amsterdam"
       doing: "Analytics Engineer (Xebia Data)"
       association: "Vattenfall"
-      description: "Worked in a domain team for Customer Insights, analyzing and creating dashboards on customer data, specifically renewable energies."
+      description: "Worked in a domain team for Customer Insights, analyzing and creating dashboards on customer data, specifically renewable energies. [Vattenfall](https://www.vattenfall.nl/)"
       technologies: "Azure Data Factory, Databricks, Snowflake, Power BI"
 
 "2022-10-17":
@@ -62,7 +62,7 @@
       based: "Eindhoven"
       doing: "Senior Data Engineer (Xebia Data)"
       association: "Interfood Group"
-      description: "Supported a data engineer in running and maintaining an Azure Cloud Data Platform (Xebia Base)."
+      description: "Supported a data engineer in running and maintaining an Azure Cloud Data Platform (Xebia Base). [Interfood Group](https://www.interfood.com/)"
       technologies: "Azure, dbt, Databricks, Terraform"
 
 "2023-01-01":
@@ -73,7 +73,7 @@
       based: "Amsterdam"
       doing: "Data Engineer (Xebia Data)"
       association: "Fetim Group"
-      description: "Deployed a Xebia Base Azure data platform (Databricks, dbt, Power BI). Coached users and worked on analytical use cases like warehouse insights."
+      description: "Deployed a Xebia Base Azure data platform (Databricks, dbt, Power BI). Coached users and worked on analytical use cases like warehouse insights. [Fetim Group](https://www.fetimgroup.com/)"
       technologies: "Databricks, dbt, Power BI, Azure, Python"
 
 "2023-10-16":
@@ -108,7 +108,7 @@
       based: "Amersfoort"
       doing: "Data Engineer (Xebia Data)"
       association: "Energie Data Services Nederland (EDSN)"
-      description: "Implemented PoC for datamesh in AWS using Lake Formation, Athena and dbt"
+      description: "Implemented PoC for datamesh in AWS using Lake Formation, Athena and dbt. [EDSN](https://www.edsn.nl/)"
       technologies: "AWS, Terraform, dbt, Athena"
 
 "2024-06-01":
@@ -116,7 +116,7 @@
       based: "Zeist"
       doing: "Senior Analytics Engineer (Xebia Data)"
       association: "KNVB"
-      description: "Migrated 30+ SAS Viya workflows to Snowflake +dbt"
+      description: "Migrated 30+ SAS Viya workflows to Snowflake +dbt. [KNVB](https://www.knvb.nl/)"
       technologies: "SAS, Snowflake, dbt, Azure, Dagster"
 
 "2024-10-07":
@@ -133,7 +133,7 @@
     - headline: "🚗 Project @ ANWB"
       based: "Den Haag"
       doing: "Senior Data Engineer (Xebia Data)"
-      description: "Implemented and designed an AWS caching layer for the ANWB energy app."
+      description: "Implemented and designed an AWS caching layer for the ANWB energy app. [ANWB](https://www.anwb.nl/)"
       association: "ANWB"
       technologies: "AWS, CDK, dbt, Python"
 
