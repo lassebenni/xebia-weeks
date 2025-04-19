@@ -1,27 +1,27 @@
 # Technology to icon mapping
 icons:
   # Cloud & Infrastructure
-  "Azure": '<img src="https://cdn-icons-png.flaticon.com/512/873/873107.png" width="18" height="18" style="margin-right: 4px;">' 
-  "AWS": '<img src="https://cdn-icons-png.flaticon.com/512/1409/1409937.png" width="18" height="18" style="margin-right: 4px;">' 
-  "GCP": '<img src="https://cdn-icons-png.flaticon.com/512/2991/2991147.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Kubernetes": '<img src="https://cdn-icons-png.flaticon.com/512/5969/5969059.png" width="18" height="18" style="margin-right: 4px;">' 
-  "CDK": '<img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Azure Data Factory": '<img src="https://cdn-icons-png.flaticon.com/512/2282/2282188.png" width="18" height="18" style="margin-right: 4px;">' 
-  
+  "Azure": '<img src="https://cdn-icons-png.flaticon.com/512/873/873107.png" width="18" height="18" style="margin-right: 4px;">'
+  "AWS": '<img src="https://avatars.githubusercontent.com/u/2232217?s=48&v=4" width="18" height="18" style="margin-right: 4px;">'
+  "GCP": '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="18" height="18" style="margin-right: 4px;">'
+  "Kubernetes": '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="18" height="18" style="margin-right: 4px;">'
+  "CDK": '<img src="https://avatars.githubusercontent.com/u/2232217?s=48&v=4" width="18" height="18" style="margin-right: 4px;">'
+  "Azure Data Factory": '<img src="https://seekvectors.com/files/download/Azure%20Data%20Factory.svg" width="18" height="18" style="margin-right: 4px;">'
+
   # Programming & Development
-  "Python": '<img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Terraform": '<img src="https://cdn-icons-png.flaticon.com/512/8662/8662058.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Writing": '<img src="https://cdn-icons-png.flaticon.com/512/2919/2919592.png" width="18" height="18" style="margin-right: 4px;">' 
+  "Python": '<img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width="18" height="18" style="margin-right: 4px;">'
+  "Terraform": '<img src="https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg" width="18" height="18" style="margin-right: 4px;">'
+  "Writing": '<img src="https://cdn-icons-png.flaticon.com/512/2919/2919592.png" width="18" height="18" style="margin-right: 4px;">'
 
   # Data & Analytics
-  "dbt": '<img src="https://cdn-icons-png.flaticon.com/512/2906/2906206.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Databricks": '<img src="https://cdn-icons-png.flaticon.com/512/8002/8002112.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Athena": '<img src="https://cdn-icons-png.flaticon.com/512/2626/2626297.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Power BI": '<img src="https://cdn-icons-png.flaticon.com/512/5968/5968875.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Snowflake": '<img src="https://cdn-icons-png.flaticon.com/512/2570/2570575.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Airflow": '<img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="18" height="18" style="margin-right: 4px;">' 
-  "Dagster": '<img src="https://cdn-icons-png.flaticon.com/512/2452/2452452.png" width="18" height="18" style="margin-right: 4px;">' 
-  "SAS": '<img src="https://cdn-icons-png.flaticon.com/512/3039/3039436.png" width="18" height="18" style="margin-right: 4px;">' 
-  
+  "dbt": '<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/dbt.svg" width="18" height="18" style="margin-right: 4px;">'
+  "Databricks": '<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/databricks.svg" width="18" height="18" style="margin-right: 4px;">'
+  "Athena": '<img src="https://icon.icepanel.io/AWS/svg/Analytics/Athena.svg" width="18" height="18" style="margin-right: 4px;">'
+  "Power BI": '<img src="https://img.icons8.com/color/48/000000/power-bi.png" width="18" height="18" style="margin-right: 4px;">'
+  "Snowflake": '<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/snowflake.svg" width="18" height="18" style="margin-right: 4px;">'
+  "Airflow": '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" width="18" height="18" style="margin-right: 4px;">'
+  "Dagster": '<img src="https://avatars.githubusercontent.com/u/40032576?s=48&v=4" width="18" height="18" style="margin-right: 4px;">'
+  "SAS": '<img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/SAS_Logo.svg" width="18" height="18" style="margin-right: 4px;">'
+
   # Default icon for technologies without a specific icon
-  "default": '<img src="https://cdn-icons-png.flaticon.com/512/2721/2721616.png" width="18" height="18" style="margin-right: 4px;">' 
+  "default": '<img src="https://cdn-icons-png.flaticon.com/512/2721/2721616.png" width="18" height="18" style="margin-right: 4px;">'
